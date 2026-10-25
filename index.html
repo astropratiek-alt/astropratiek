@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Astro Pratiek — Astrology, Numerology and Vastu Shastra consultations. Book directly on WhatsApp.">
+<meta name="theme-color" content="#101827">
+<title>Astro Pratiek | Astrology · Numerology · Vastu</title>
+<style>
+:root{--navy:#101827;--navy2:#17243a;--gold:#dfbd72;--cream:#f7f2e8;--ink:#182235;--muted:#667085;--white:#fff;--line:#e8dfce}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{background:rgba(16,24,39,.97);color:#fff;position:sticky;top:0;z-index:10;border-bottom:1px solid #ffffff18}.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}.brand{display:flex;align-items:center;gap:11px}.brand-mark{width:43px;height:43px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:24px}.brand-name{font-family:Georgia,serif;font-size:21px;letter-spacing:1.2px;color:var(--gold);line-height:1.1}.brand-sub{font-size:10px;letter-spacing:1.4px;color:#e8dfce;margin-top:4px}.navlinks{display:flex;align-items:center;gap:23px;font-size:13px;color:#f4efe4}.navlinks a:hover{color:var(--gold)}.nav-actions{display:flex;align-items:center;gap:10px}.lang{border:1px solid #8d7a4c;color:#fff;background:transparent;border-radius:999px;padding:8px 11px;cursor:pointer}.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#172033;border:0;border-radius:999px;padding:12px 19px;font-weight:750;font-size:14px;cursor:pointer;transition:transform .15s,opacity .15s}.btn:hover{transform:translateY(-1px);opacity:.94}.btn-outline{background:transparent;border:1px solid var(--gold);color:var(--gold)}
+.hero{color:#fff;background:radial-gradient(ellipse at 75% 25%,#34415b 0%,transparent 35%),radial-gradient(ellipse at 10% 90%,#2a2630 0%,transparent 38%),linear-gradient(135deg,#101827,#111a2a 65%,#20263a);position:relative;overflow:hidden}.hero:before{content:"✧  ·   ✦      ·  ✧     ·       ✦     ·  ✧";position:absolute;inset:35px 0 auto;text-align:center;color:#dfbd7280;letter-spacing:15px;font-size:19px;pointer-events:none}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;padding:92px 0 86px;position:relative}.eyebrow{color:var(--gold);font-size:12px;letter-spacing:2.2px;text-transform:uppercase;font-weight:800}.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(42px,6vw,70px);line-height:1.06;font-weight:500;margin:16px 0 18px;letter-spacing:-1.2px}.hero h1 span{color:var(--gold);font-style:italic}.hero p{color:#e3e7ef;max-width:570px;font-size:17px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.trustline{margin-top:25px;font-size:12px;color:#c9cfdb}.cosmic-card{border:1px solid #dfbd7255;border-radius:48% 48% 22px 22px;padding:24px;text-align:center;background:linear-gradient(155deg,#ffffff0b,#ffffff03);max-width:390px;margin:auto;position:relative}.orbit{width:min(100%,300px);aspect-ratio:1;border:1px solid #dfbd7280;border-radius:50%;margin:0 auto 18px;display:grid;place-items:center;position:relative;background:radial-gradient(circle,#dfbd721c 0 3%,transparent 4%),radial-gradient(circle at center,#27334a 0%,#121b2c 65%)}.orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #dfbd724a;border-radius:50%;inset:22px}.orbit:after{inset:49px}.sun{font-size:94px;color:var(--gold);text-shadow:0 0 35px #dfbd7244}.cosmic-caption{color:#e9d9b3;font-family:Georgia,serif;font-size:20px}.cosmic-small{color:#bfc8d6;font-size:12px;margin-top:5px}
+section{padding:76px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 36px}.section-head .eyebrow{color:#9a762c}.section-head h2{font-family:Georgia,serif;font-size:clamp(32px,4vw,45px);line-height:1.15;font-weight:500;margin:10px 0 12px;color:var(--navy)}.section-head p{color:var(--muted);margin:0}.services{background:var(--cream)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.service-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px;box-shadow:0 8px 25px #18223508;display:flex;flex-direction:column;min-height:300px}.service-icon{height:52px;width:52px;border-radius:15px;background:#f5ead0;color:#8c6b27;display:grid;place-items:center;font-size:26px}.service-card h3{font-family:Georgia,serif;font-size:25px;font-weight:500;margin:20px 0 7px}.service-card p{font-size:14px;color:var(--muted);margin:0 0 18px}.price{margin-top:auto;border-top:1px solid #eee5d6;padding-top:16px;display:flex;justify-content:space-between;align-items:center;gap:10px}.price strong{font-size:13px;color:#8a6824}.price a{font-size:12px;font-weight:800;color:#72551d}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px;align-items:center}.about-art{min-height:350px;border-radius:24px;background:radial-gradient(circle at 50% 40%,#dfbd7244,transparent 30%),linear-gradient(145deg,#17243a,#101827);display:grid;place-items:center;color:var(--gold);border:1px solid #dfbd7255}.about-art .symbol{font-size:130px;font-family:Georgia,serif}.about-copy h2{font-family:Georgia,serif;font-weight:500;font-size:42px;line-height:1.12;margin:12px 0}.about-copy p{color:var(--muted)}.checks{list-style:none;padding:0;display:grid;gap:10px;margin:22px 0}.checks li:before{content:"✦";color:#a17a28;margin-right:10px}
+.booking{background:var(--navy);color:#fff}.booking .section-head h2{color:#fff}.booking .section-head p{color:#c8d0dc}.booking-panel{max-width:760px;margin:auto;background:#ffffff0b;border:1px solid #dfbd7244;border-radius:20px;padding:28px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field label{font-size:13px;color:#e5d8b8}.field input,.field select,.field textarea{width:100%;border-radius:10px;border:1px solid #ffffff35;background:#111d30;color:#fff;padding:12px;font:inherit}.field select option{color:#172033}.field textarea{min-height:90px;resize:vertical}.field.full{grid-column:1/-1}.booking-note{font-size:12px;color:#bac4d3;margin:13px 0 0}.contact{background:#f8f5ee}.contact-box{display:flex;justify-content:space-between;align-items:center;gap:25px;border:1px solid var(--line);background:#fff;border-radius:20px;padding:28px}.contact-box h3{font-family:Georgia,serif;font-size:26px;font-weight:500;margin:0 0 4px}.contact-box p{margin:0;color:var(--muted);font-size:14px}footer{background:#0a101b;color:#c7cfdb;padding:28px 0}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.footer-brand{color:var(--gold);font-family:Georgia,serif;letter-spacing:1px}.footer-small{font-size:12px;color:#9ea8b8}
+@media(max-width:800px){.navlinks{display:none}.hero-grid{grid-template-columns:1fr;gap:35px;padding:72px 0 60px}.hero-copy{text-align:center}.hero-copy p{margin-left:auto;margin-right:auto}.hero-actions{justify-content:center}.cosmic-card{max-width:330px}.cards{grid-template-columns:1fr}.service-card{min-height:0}.about-grid{grid-template-columns:1fr;gap:28px}.about-art{min-height:250px}.about-art .symbol{font-size:95px}.contact-box{align-items:flex-start;flex-direction:column}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}section{padding:58px 0}.hero h1{font-size:48px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Astro Pratiek home"><div class="brand-mark">☼</div><div><div class="brand-name">ASTRO PRATIEK</div><div class="brand-sub">ASTROLOGY · NUMEROLOGY · VASTU</div></div></a>
+    <nav class="navlinks"><a href="#services" data-en="Services" data-hi="सेवाएँ">Services</a><a href="#about" data-en="About" data-hi="परिचय">About</a><a href="#booking" data-en="Book a session" data-hi="बुकिंग">Book a session</a><a href="#contact" data-en="Contact" data-hi="संपर्क">Contact</a></nav>
+    <div class="nav-actions"><button class="lang" id="langBtn" type="button" aria-label="Switch language">हिन्दी</button><a class="btn" href="#booking" data-en="Book now" data-hi="अभी बुक करें">Book now</a></div>
+  </div>
+</header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+  <div class="hero-copy"><div class="eyebrow" data-en="A little clarity for your journey" data-hi="आपकी यात्रा के लिए थोड़ी स्पष्टता">A little clarity for your journey</div>
+  <h1 data-en-html="Find your path.<br><span>Align your stars.</span>" data-hi-html="अपनी राह पहचानें।<br><span>सितारों से जुड़ें।</span>">Find your path.<br><span>Align your stars.</span></h1>
+  <p data-en="Explore astrology, numerology and Vastu Shastra guidance in a personal consultation. Connect directly to ask a question or book a session." data-hi="ज्योतिष, अंक ज्योतिष और वास्तु शास्त्र के लिए व्यक्तिगत परामर्श प्राप्त करें। सवाल पूछने या सत्र बुक करने के लिए सीधे संपर्क करें।">Explore astrology, numerology and Vastu Shastra guidance in a personal consultation. Connect directly to ask a question or book a session.</p>
+  <div class="hero-actions"><a class="btn" href="#booking" data-en="Book a consultation" data-hi="परामर्श बुक करें">Book a consultation</a><a class="btn btn-outline" href="#services" data-en="Explore services" data-hi="सेवाएँ देखें">Explore services</a></div>
+  <div class="trustline" data-en="Personal guidance · Online enquiries · Hindi & English" data-hi="व्यक्तिगत मार्गदर्शन · ऑनलाइन पूछताछ · हिंदी और अंग्रेज़ी">Personal guidance · Online enquiries · Hindi & English</div></div>
+  <div class="cosmic-card"><div class="orbit"><div class="sun">☼</div></div><div class="cosmic-caption" data-en="Wisdom • Balance • Direction" data-hi="ज्ञान • संतुलन • दिशा">Wisdom • Balance • Direction</div><div class="cosmic-small" data-en="Astrology · Numerology · Vastu Shastra" data-hi="ज्योतिष · अंक ज्योतिष · वास्तु शास्त्र">Astrology · Numerology · Vastu Shastra</div></div>
+</div></section>
+<section class="services" id="services"><div class="wrap"><div class="section-head"><div class="eyebrow" data-en="How I can help" data-hi="मैं कैसे मदद कर सकता हूँ">How I can help</div><h2 data-en="Services & Consultations" data-hi="सेवाएँ और परामर्श">Services & Consultations</h2><p data-en="Choose a service and message on WhatsApp to ask about availability and fees." data-hi="अपनी सेवा चुनें और उपलब्धता व शुल्क जानने के लिए WhatsApp पर संदेश भेजें।">Choose a service and message on WhatsApp to ask about availability and fees.</p></div>
+<div class="cards">
+<article class="service-card"><div class="service-icon">☼</div><h3 data-en="Astrology" data-hi="ज्योतिष">Astrology</h3><p data-en="Personal astrology consultation for questions about life direction, relationships, work and important decisions." data-hi="जीवन की दिशा, रिश्तों, काम और महत्वपूर्ण निर्णयों से जुड़े सवालों के लिए व्यक्तिगत ज्योतिष परामर्श।">Personal astrology consultation for questions about life direction, relationships, work and important decisions.</p><div class="price"><strong data-en="Consultation: ₹5,100" data-hi="परामर्श: ₹5,100">Consultation: ₹5,100</strong><a href="#" class="service-wa" data-service="Astrology" data-en="BOOK ON WHATSAPP →" data-hi="WhatsApp पर बुक करें →">BOOK ON WHATSAPP →</a></div></article>
+<article class="service-card"><div class="service-icon">✧</div><h3 data-en="Numerology" data-hi="अंक ज्योतिष">Numerology</h3><p data-en="Explore number-based insights using your name or date of birth as part of a personal guidance session." data-hi="व्यक्तिगत मार्गदर्शन सत्र में नाम या जन्मतिथि के आधार पर अंक ज्योतिष से जुड़े पहलुओं को समझें।">Explore number-based insights using your name or date of birth as part of a personal guidance session.</p><div class="price"><strong data-en="Consultation: ₹15,000" data-hi="परामर्श: ₹15,000">Consultation: ₹15,000</strong><a href="#" class="service-wa" data-service="Numerology" data-en="BOOK ON WHATSAPP →" data-hi="WhatsApp पर बुक करें →">BOOK ON WHATSAPP →</a></div></article>
+<article class="service-card"><div class="service-icon">⌂</div><h3 data-en="Vastu Shastra" data-hi="वास्तु शास्त्र">Vastu Shastra</h3><p data-en="Discuss home or workspace layout and traditional Vastu considerations for your space." data-hi="अपने घर या कार्यस्थल के लेआउट और पारंपरिक वास्तु संबंधी पहलुओं पर चर्चा करें।">Discuss home or workspace layout and traditional Vastu considerations for your space.</p><div class="price"><strong data-en="Consultation: ₹21,000" data-hi="परामर्श: ₹21,000">Consultation: ₹21,000</strong><a href="#" class="service-wa" data-service="Vastu Shastra" data-en="BOOK ON WHATSAPP →" data-hi="WhatsApp पर बुक करें →">BOOK ON WHATSAPP →</a></div></article>
+</div></div></section>
+<section id="about"><div class="wrap about-grid"><div class="about-art"><div class="symbol">☼</div></div><div class="about-copy"><div class="eyebrow" data-en="Meet your guide" data-hi="आपके मार्गदर्शक">Meet your guide</div><h2 data-en="Welcome to Astro Pratiek" data-hi="Astro Pratiek में आपका स्वागत है">Welcome to Astro Pratiek</h2><p data-en="A space for thoughtful conversations around astrology, numerology and Vastu Shastra. Every consultation begins by understanding your question and the kind of guidance you are looking for." data-hi="ज्योतिष, अंक ज्योतिष और वास्तु शास्त्र पर सार्थक बातचीत के लिए आपका स्वागत है। हर परामर्श की शुरुआत आपके सवाल और आपकी ज़रूरत को समझने से होती है।">A space for thoughtful conversations around astrology, numerology and Vastu Shastra. Every consultation begins by understanding your question and the kind of guidance you are looking for.</p><ul class="checks"><li data-en="Personalised consultation" data-hi="व्यक्तिगत परामर्श">Personalised consultation</li><li data-en="Hindi and English communication" data-hi="हिंदी और अंग्रेज़ी में बातचीत">Hindi and English communication</li><li data-en="Easy booking through WhatsApp" data-hi="WhatsApp के ज़रिए आसान बुकिंग">Easy booking through WhatsApp</li></ul><a class="btn" href="#booking" data-en="Start a conversation" data-hi="बातचीत शुरू करें">Start a conversation</a></div></div></section>
+<section class="booking" id="booking"><div class="wrap"><div class="section-head"><div class="eyebrow" data-en="Let's connect" data-hi="आइए संपर्क करें">Let's connect</div><h2 data-en="Book a Consultation" data-hi="परामर्श बुक करें">Book a Consultation</h2><p data-en="Fill in a few details. WhatsApp will open with your message ready to send." data-hi="कुछ जानकारी भरें। आपका संदेश तैयार होकर WhatsApp में खुलेगा।">Fill in a few details. WhatsApp will open with your message ready to send.</p></div>
+<form class="booking-panel" id="bookingForm"><div class="fields">
+<div class="field"><label for="name" data-en="Your name" data-hi="आपका नाम">Your name</label><input id="name" name="name" autocomplete="name" required placeholder="Name / नाम"></div>
+<div class="field"><label for="service" data-en="Choose a service" data-hi="सेवा चुनें">Choose a service</label><select id="service" name="service" required><option value="Astrology">Astrology / ज्योतिष</option><option value="Numerology">Numerology / अंक ज्योतिष</option><option value="Vastu Shastra">Vastu Shastra / वास्तु शास्त्र</option></select></div>
+<div class="field"><label for="language" data-en="Preferred language" data-hi="पसंदीदा भाषा">Preferred language</label><select id="language" name="language"><option value="Hindi">Hindi / हिंदी</option><option value="English">English / अंग्रेज़ी</option><option value="Either">Either / कोई भी</option></select></div>
+<div class="field"><label for="timing" data-en="Preferred day or time (optional)" data-hi="पसंदीदा दिन या समय (वैकल्पिक)">Preferred day or time (optional)</label><input id="timing" name="timing" placeholder="e.g. Saturday evening"></div>
+<div class="field full"><label for="question" data-en="Your question (optional)" data-hi="आपका सवाल (वैकल्पिक)">Your question (optional)</label><textarea id="question" name="question" placeholder="Briefly tell us what you need help with / अपना सवाल लिखें"></textarea></div>
+<div class="field full"><button class="btn" type="submit" data-en="Continue to WhatsApp" data-hi="WhatsApp पर आगे बढ़ें">Continue to WhatsApp</button></div>
+</div><p class="booking-note" data-en="Your message will only be sent after you review it and tap Send in WhatsApp. Fees and appointment time will be confirmed directly." data-hi="आपका संदेश WhatsApp में खुलने के बाद आप उसे देखकर स्वयं भेजेंगे। शुल्क और समय की पुष्टि सीधे की जाएगी।">Your message will only be sent after you review it and tap Send in WhatsApp. Fees and appointment time will be confirmed directly.</p></form></div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="contact-box"><div><div class="eyebrow" data-en="Have a question?" data-hi="कोई सवाल है?">Have a question?</div><h3 data-en="Let's talk on WhatsApp" data-hi="WhatsApp पर बात करें">Let's talk on WhatsApp</h3><p data-en="Ask about services, consultation fees or available timings." data-hi="सेवाओं, परामर्श शुल्क या उपलब्ध समय के बारे में पूछें।">Ask about services, consultation fees or available timings.</p></div><a class="btn" id="contactWa" href="https://wa.me/919990968995" target="_blank" rel="noopener" data-en="WhatsApp: +91 99909 68995" data-hi="WhatsApp: +91 99909 68995">WhatsApp: +91 99909 68995</a></div></div></section>
+</main>
+<footer><div class="wrap footer-inner"><div><div class="footer-brand">ASTRO PRATIEK</div><div class="footer-small" data-en="Astrology · Numerology · Vastu Shastra" data-hi="ज्योतिष · अंक ज्योतिष · वास्तु शास्त्र">Astrology · Numerology · Vastu Shastra</div></div><div class="footer-small">© <span id="year"></span> Astro Pratiek. <span data-en="All rights reserved." data-hi="सर्वाधिकार सुरक्षित।">All rights reserved.</span></div></div></footer>
+<script>
+const WHATSAPP_NUMBER = "919990968995";
+let currentLang = "en";
+const langBtn = document.getElementById("langBtn");
+function setLanguage(lang){
+  currentLang = lang;
+  document.documentElement.lang = lang === "hi" ? "hi" : "en";
+  document.querySelectorAll("[data-en][data-hi]").forEach(el => {
+    el.textContent = lang === "hi" ? el.dataset.hi : el.dataset.en;
+  });
+  document.querySelectorAll("[data-en-html][data-hi-html]").forEach(el => {
+    el.innerHTML = lang === "hi" ? el.dataset.hiHtml : el.dataset.enHtml;
+  });
+  langBtn.textContent = lang === "hi" ? "English" : "हिन्दी";
+}
+langBtn.addEventListener("click", () => setLanguage(currentLang === "en" ? "hi" : "en"));
+function openWhatsApp(message){
+  const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+  window.open(url, "_blank", "noopener,noreferrer");
+}
+document.querySelectorAll(".service-wa").forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    const service = link.dataset.service;
+    const message = currentLang === "hi"
+      ? `नमस्ते Astro Pratiek, मुझे ${service} के बारे में जानकारी और परामर्श शुल्क जानना है।`
+      : `Hello Astro Pratiek, I would like to know more about ${service} and the consultation fee.`;
+    openWhatsApp(message);
+  });
+});
+document.getElementById("bookingForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const name = document.getElementById("name").value.trim();
+  const service = document.getElementById("service").value;
+  const language = document.getElementById("language").value;
+  const timing = document.getElementById("timing").value.trim();
+  const question = document.getElementById("question").value.trim();
+  const message = currentLang === "hi"
+    ? `नमस्ते Astro Pratiek,\nमेरा नाम: ${name}\nसेवा: ${service}\nपसंदीदा भाषा: ${language}\nपसंदीदा समय: ${timing || "लचीला"}\nसवाल: ${question || "कृपया परामर्श शुल्क और उपलब्ध समय बताएं।"}`
+    : `Hello Astro Pratiek,\nMy name: ${name}\nService: ${service}\nPreferred language: ${language}\nPreferred time: ${timing || "Flexible"}\nQuestion: ${question || "Please share the consultation fee and available timings."}`;
+  openWhatsApp(message);
+});
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
